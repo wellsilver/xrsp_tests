@@ -115,8 +115,8 @@ class XrspHost:
 
     def init_usb(self):
         # find our device
-        self.dev = usb.core.find(idVendor=0x2833) #, idProduct=0x0183
-
+        self.dev = usb.core.find(idProduct=0x0137) #, idProduct=0x0183
+        
         # was it found?
         if self.dev is None:
             raise ValueError('Device not found')
